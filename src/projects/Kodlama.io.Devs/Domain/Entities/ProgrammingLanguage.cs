@@ -14,6 +14,8 @@ namespace Domain.Entities
         }
 
         public string Name { get; set; }
+        public virtual ICollection<Technology> Technologies { get; set; }
+
 
         public ProgrammingLanguage(int Id,string name)
         {
