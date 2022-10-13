@@ -1,8 +1,10 @@
 ﻿//using Application.Features.someFeature.Rules;
 using Application.Features.Auths.Rules;
 using Application.Features.GithubProfiles.Rules;
+using Application.Features.OperationClaims.Rules;
 using Application.Features.ProgrammingLanguages.Rules;
 using Application.Features.Technologies.Rules;
+using Application.Features.UserOperationClaims.Rules;
 using Application.Services.AuthService;
 using Core.Application.Pipelines.Authorization;
 using Core.Application.Pipelines.Caching;
@@ -32,6 +34,8 @@ namespace Application
             services.AddScoped<TechnologyBusinessRules>();
             services.AddScoped<AuthBusinessRules>();
             services.AddScoped<GithubProfileRules>();
+            services.AddScoped<OperationClaimBusinessRules>();
+            services.AddScoped<UserOperationClaimBusinessRules>();
 
 
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());

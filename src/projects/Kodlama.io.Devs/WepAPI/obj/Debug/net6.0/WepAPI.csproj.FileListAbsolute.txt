@@ -89,3 +89,4 @@ C:\Users\Fatih\source\repos\Kodlama.io.Devs\src\projects\Kodlama.io.Devs\WepAPI\
 C:\Users\Fatih\source\repos\Kodlama.io.Devs\src\projects\Kodlama.io.Devs\WepAPI\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Fatih\source\repos\Kodlama.io.Devs\src\projects\Kodlama.io.Devs\WepAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
 C:\Users\Fatih\source\repos\Kodlama.io.Devs\src\projects\Kodlama.io.Devs\WepAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Fatih\source\repos\Kodlama.io.Devs\src\projects\Kodlama.io.Devs\WepAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll

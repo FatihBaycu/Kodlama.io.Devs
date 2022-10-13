@@ -19,12 +19,6 @@
 
   <ItemGroup>
     <Folder Include="Features\GithubProfiles\Queries\" />
-    <Folder Include="Features\OperationClaims\Command\" />
-    <Folder Include="Features\OperationClaims\Dtos\" />
-    <Folder Include="Features\OperationClaims\Models\" />
-    <Folder Include="Features\OperationClaims\Profiles\" />
-    <Folder Include="Features\OperationClaims\Queries\" />
-    <Folder Include="Features\OperationClaims\Rules\" />
     <Folder Include="Features\RefreshTokens\Command\" />
     <Folder Include="Features\RefreshTokens\Dtos\" />
     <Folder Include="Features\RefreshTokens\Models\" />
@@ -32,12 +26,6 @@
     <Folder Include="Features\RefreshTokens\Queries\" />
     <Folder Include="Features\RefreshTokens\Rules\" />
     <Folder Include="Features\Technologies\Rules\" />
-    <Folder Include="Features\UserOperationClaims\Command\" />
-    <Folder Include="Features\UserOperationClaims\Dtos\" />
-    <Folder Include="Features\UserOperationClaims\Models\" />
-    <Folder Include="Features\UserOperationClaims\Profiles\" />
-    <Folder Include="Features\UserOperationClaims\Queries\" />
-    <Folder Include="Features\UserOperationClaims\Rules\" />
     <Folder Include="Features\Users\Rules\" />
   </ItemGroup>
 

@@ -24,6 +24,7 @@ namespace Persistence
             services.AddScoped<IProgrammingLanguageRepository, ProgrammingLanguageRepository>();
             services.AddScoped<ITechnologyRepository, TechnologyRepository>();
             services.AddScoped<IGithubProfileRepository, GithubProfileRepository>();
+            services.AddScoped<IOperationClaimRepository, OperationClaimRepository>();
 
             //USER
 
@@ -31,6 +32,9 @@ namespace Persistence
             services.AddScoped<IUserOperationClaimRepository, UserOperationClaimRepository>();
             services.AddScoped<IOperationClaimRepository, OperationClaimRepository>();
             services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
+
+
+
 
             return services;
         }
