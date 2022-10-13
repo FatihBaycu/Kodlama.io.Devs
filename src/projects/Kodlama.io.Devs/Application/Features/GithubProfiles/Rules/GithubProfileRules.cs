@@ -33,6 +33,12 @@ namespace Application.Features.GithubProfiles.Rules
         {
             GithubProfile? githubProfile = await _gitRepo.GetAsync(c => c.UserId == id);
             if (githubProfile != null) throw new BusinessException("User is already exist.");
+        }  
+        
+        public async Task GithubProfileIsExistCheck(int id)
+        {
+            GithubProfile? githubProfile = await _gitRepo.GetAsync(c => c.Id == id);
+            if (githubProfile == null) throw new BusinessException("Github Profile not exist.");
         }
 
     }

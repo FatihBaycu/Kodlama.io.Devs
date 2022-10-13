@@ -19,7 +19,13 @@ namespace Application.Features.GithubProfiles.Profiles
             CreateMap<GithubProfile, CreateGithubProfileCommand>().ReverseMap();
             CreateMap<GithubProfile, CreateGithubProfileDto>().ReverseMap();
 
+            CreateMap<GithubProfile, UpdateGithubProfileCommand>().ReverseMap();
+            CreateMap<GithubProfile, UpdateGithubProfileDto>().ReverseMap();
 
+            CreateMap<GithubProfile, DeleteGithubProfileCommand>().ReverseMap();
+            CreateMap<GithubProfile, DeleteGithubProfileDto>().ReverseMap();
+
+            
 
             /* CreateMap<Technology, TechnologyListDto>().ForMember(x => x.ProgrammingLanguageName, opt => opt.MapFrom(c => c.ProgrammingLanguage.Name)).ReverseMap();
              CreateMap<IPaginate<Technology>, TechnologyModel>().ReverseMap();
