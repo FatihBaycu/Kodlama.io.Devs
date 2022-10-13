@@ -30,7 +30,7 @@ namespace Application.Features.Technologies.Command
 
             public CreateTechnologyCommandHandler(ITechnologyRepository technologyRepository, IMapper mapper, TechnologyBusinessRules rules)
             {
-                _technologyRepository = technologyRepository;
+                _technologyRepository = technologyRepository;   
                 _mapper = mapper;
                 _rules = rules;
             }

@@ -1,6 +1,12 @@
 ﻿//using Application.Features.someFeature.Rules;
+using Application.Features.Auths.Rules;
+using Application.Features.GithubProfiles.Rules;
 using Application.Features.ProgrammingLanguages.Rules;
 using Application.Features.Technologies.Rules;
+using Application.Services.AuthService;
+using Core.Application.Pipelines.Authorization;
+using Core.Application.Pipelines.Caching;
+using Core.Application.Pipelines.Logging;
 using Core.Application.Pipelines.Validation;
 using FluentValidation;
 using MediatR;
@@ -24,14 +30,20 @@ namespace Application
 
             services.AddScoped<ProgrammingLanguageBusinessRules>();
             services.AddScoped<TechnologyBusinessRules>();
+            services.AddScoped<AuthBusinessRules>();
+            services.AddScoped<GithubProfileRules>();
 
 
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
-            //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AuthorizationBehavior<,>));
-            //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(CachingBehavior<,>));
-            //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(CacheRemovingBehavior<,>));
-            //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AuthorizationBehavior<,>));
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(CachingBehavior<,>));
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(CacheRemovingBehavior<,>));
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestValidationBehavior<,>));
+
+
+            services.AddScoped<IAuthService, AuthManager>();
+
 
             return services;
 
